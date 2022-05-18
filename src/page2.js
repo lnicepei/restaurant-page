@@ -33,6 +33,13 @@ function createMenu() {
     const description4 = document.createElement('div');
     description4.textContent = "Spiced Vegan Lentil Soup (AKA the Best!)";
     main.appendChild(description4);
+
+    const scrollContainer = document.querySelector(".main");
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+});
 }
 
 export{
