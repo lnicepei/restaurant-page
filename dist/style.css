@@ -7,6 +7,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
     height: 10vh;
 }
 
@@ -24,4 +25,16 @@ header{
 img{
     /* width: 100%;
     height: 80vh; */
+}
+
+.main{
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.mapholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
