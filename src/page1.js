@@ -3,7 +3,7 @@ function createHomepage() {
     main.innerHTML = "";
     
     const image = document.createElement('img');
-    image.src = '/src/images/shawnanggg-nmpW_WwwVSc-unsplash.jpg';
+    image.src = '/images/shawnanggg-nmpW_WwwVSc-unsplash.jpg';
 
     const description = document.createElement('div');
     description.textContent = "The most delicious vevdsgan cuisine of all times";
