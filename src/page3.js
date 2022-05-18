@@ -1,25 +1,16 @@
-// function createAboutPage() {
-//     const main = document.querySelector('.main');
-//     main.innerHTML = "";
-// }
-
-// export {
-//     createAboutPage 
-// }
-function createHomepage2() {
+function createAboutPage() {
     const main = document.querySelector('.main');
     main.innerHTML = "";
 
-    const image = document.createElement('img');
-    image.src = "/src/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg";
-    const description = document.createElement('div');
-    description.textContent = "The most delicious vegan cuisine of all times";
     
-    document.body.appendChild(main);
-    main.appendChild(description);
-    main.appendChild(image);
+    const mapHolder = document.createElement('div');
+    document.querySelector('.main').appendChild(mapHolder);
+    mapHolder.className = 'mapholder';
+    mapHolder.innerHTML = '<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=mcdonalds%20new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">website google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>'
+    initMap();
 }
 
-export{
-    createHomepage2
+
+export {
+    createAboutPage 
 }
