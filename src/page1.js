@@ -1,15 +1,16 @@
 function createHomepage() {
     const main = document.querySelector('.main');
     main.innerHTML = "";
-
-    const image = document.createElement('img');
-    // image.src = "/src/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg";
-    const description = document.createElement('div');
-    description.textContent = "The most delicious vegan cuisine of all times";
     
-    document.body.appendChild(main);
-    main.appendChild(description);
+    const image = document.createElement('img');
+    image.src = '/src/images/shawnanggg-nmpW_WwwVSc-unsplash.jpg';
+
+    const description = document.createElement('div');
+    description.textContent = "The most delicious vevdsgan cuisine of all times";
+    
     main.appendChild(image);
+    main.appendChild(description);
+    document.body.appendChild(main);
 }
 
 export{
