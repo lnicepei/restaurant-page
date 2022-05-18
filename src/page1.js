@@ -3,7 +3,7 @@ function createHomepage() {
     main.innerHTML = "";
 
     const image = document.createElement('img');
-    image.src = "/src/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg";
+    // image.src = "/src/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg";
     const description = document.createElement('div');
     description.textContent = "The most delicious vegan cuisine of all times";
     
