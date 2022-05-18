@@ -2,7 +2,6 @@ function createAboutPage() {
     const main = document.querySelector('.main');
     main.innerHTML = "";
 
-    
     const mapHolder = document.createElement('div');
     document.querySelector('.main').appendChild(mapHolder);
     mapHolder.className = 'mapholder';
