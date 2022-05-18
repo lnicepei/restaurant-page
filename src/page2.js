@@ -3,7 +3,7 @@ function createMenu() {
     main.innerHTML = "";
 
     const image1 = document.createElement('img');
-    image1.src = "/src/images/butternut-squash-chipotle-chili-recipe-0-1-550x822.jpg";
+    image1.src = "/images/butternut-squash-chipotle-chili-recipe-0-1-550x822.jpg";
     
     const description1 = document.createElement('div');
     description1.textContent = "Butternut Squash Chipotle Chili with Avocado";
@@ -15,7 +15,7 @@ function createMenu() {
 
 
     const image2 = document.createElement('img');
-    image2.src = "/src/images/sugar-snap-pea-and-carrot-soba-noodles-1-2-550x824.jpg";
+    image2.src = "/images/sugar-snap-pea-and-carrot-soba-noodles-1-2-550x824.jpg";
     main.appendChild(image2);
     
     const description2 = document.createElement('div');
@@ -29,7 +29,7 @@ function createMenu() {
 
 
     const image3 = document.createElement('img');
-    image3.src = "/src/images/baked-vegetable-paella-recipe-550x824.jpg";
+    image3.src = "/images/baked-vegetable-paella-recipe-550x824.jpg";
     main.appendChild(image3);
     
     const description3 = document.createElement('div');
@@ -43,7 +43,7 @@ function createMenu() {
 
     
     const image4 = document.createElement('img');
-    image4.src = "/src/images/best-lentil-soup-recipe-4-548x824.jpg";
+    image4.src = "/images/best-lentil-soup-recipe-4-548x824.jpg";
     main.appendChild(image4);
     
     const description4 = document.createElement('div');
@@ -57,7 +57,7 @@ function createMenu() {
     
     
     const image5 = document.createElement('img');
-    image5.src = "/src/images/spaghetti-squash-burrito-bowls-3-1-550x824.jpg";
+    image5.src = "/images/spaghetti-squash-burrito-bowls-3-1-550x824.jpg";
     main.appendChild(image5);
     
     const description5 = document.createElement('div');
@@ -71,7 +71,7 @@ function createMenu() {
     
     
     const image6 = document.createElement('img');
-    image6.src = "/src/images/west-african-peanut-soup-recipe-4-1-550x824.jpg";
+    image6.src = "/images/west-african-peanut-soup-recipe-4-1-550x824.jpg";
     main.appendChild(image6);
     
     const description6 = document.createElement('div');
