@@ -1,14 +1,12 @@
 function createHomepage() {
     const main = document.querySelector('.main');
     main.innerHTML = "";
-    
-    const image = document.createElement('img');
-    image.src = 'images/shawnanggg-nmpW_WwwVSc-unsplash.jpg';
+
+    document.body.style.background = 'url("images/rod-long-kImU-9S9uh8-unsplash.jpg") no-repeat';
 
     const description = document.createElement('div');
     description.textContent = "The most delicious vevdsgan cuisine of all times";
     
-    main.appendChild(image);
     main.appendChild(description);
     document.body.appendChild(main);
 }
