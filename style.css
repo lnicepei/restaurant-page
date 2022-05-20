@@ -22,7 +22,7 @@ header > h1{
 .buttons{
     display: flex;
     flex-direction: row;
-    gap: 200px;
+    gap: 20px;
     grid-column: 2 / 3;
 }
 
