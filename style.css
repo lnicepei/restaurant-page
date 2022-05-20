@@ -4,17 +4,39 @@
 }
 
 header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3;
     position: fixed;
+    align-items: center;
     height: 10vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,6,4,1) 15%, rgba(0,0,0,0.6012605725884104) 62%, rgba(53,196,120,0) 100%);
+    color: white;
 }
 
-.button-container{
+header > h1{
+    margin-left: 20px;
+    grid-column: 0 / 1;
+}
+
+.buttons{
     display: flex;
     flex-direction: row;
-    background: red;
+    gap: 200px;
+    grid-column: 2 / 3;
+}
+
+button {
+    border: none;
+    background: none;
+    transition: 0.4s;
+    color: white;
+    padding: 10px;
+}
+
+button:hover {
+    outline: 1px solid white; /* Green */
+    color: white;
 }
 
 .main{
@@ -36,6 +58,8 @@ img{
     height: 80vh;
     object-fit: cover;
     border-radius: 50px;
+    margin-right: 14px;
+    box-shadow: inset 0px 0px 100px rgba(0,0,0,0.9);
 }
 
 .mapholder {
