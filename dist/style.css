@@ -1,47 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:wght@300;400;700&display=swap");
+
 *{
     margin: 0;
     padding: 0;
 }
 
 header{
-    /* display: grid;
-    grid-template-columns: 10; */
     display: flex;
     position: fixed;
     align-items: center;
     justify-content: center;
     height: 10vh;
     width: 100%;
-    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,6,4,1) 15%, rgba(0,0,0,0.6012605725884104) 62%, rgba(53,196,120,0) 100%); */
     background: white;
     color: #44bb53;
     font-family: "Montserrat", sans-serif;
 }
 
-header > h1{
-    /* margin-left: 20px; */
-    /* grid-column: 4 / 5; */
-    /* font-size: 4rem; */
-}
-
-.buttons1{
+.buttons1, .buttons2{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 20px;
-    /* grid-column: 1 / 4; */
-    /* font-family: 'Zen Loop', cursive; */
-}
-
-.buttons2{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 20px;
-    /* grid-column: 5 / 10; */
-    /* font-family: 'Zen Loop', cursive; */
 }
 
 button {
@@ -55,22 +33,51 @@ button {
 }
 
 button:hover {
-    outline: 1px solid white; /* Green */
+	color: #205827;
+	box-shadow: inset 0 0 0 3px #205827;
 }
 
 .main{
     align-items: center;
     justify-content: center;
     padding-top: 10vh;
+    padding-bottom: 10vh;
     height: 90vh;
-    overflow-x: hidden;
     display: flex;
+}
+
+.title{
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.title > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title > p{
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+}
+
+svg{
+    justify-content: center;
+    color: #44bb53;
 }
 
 .description{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 0;
     font-family: "Montserrat", sans-serif;
     font-size: 64px;
     font-weight: bold;
@@ -78,23 +85,32 @@ button:hover {
     text-transform: uppercase;
     color: #44bb53;
     background: white;
-    height: 40%;
+    height: 10vh;
 }
 
 .menu-element{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    border-radius: 10px;
-    margin-right: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 20px;
+    background: white;
+    color: black;
 } 
+
+.menu-element > div{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    object-fit: cover;
+}
 
 img{
     height: 60vh;
     object-fit: cover;
-    border-radius: 50px;
-    margin-right: 14px;
-    box-shadow: inset 0px 0px 100px rgba(0,0,0,0.9);
+    border-radius: 20px 0 0 20px;
 }
 
 .mapholder, .info {
@@ -106,4 +122,5 @@ img{
     padding: 30px;
     border-radius: 20px;
     font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
 }
