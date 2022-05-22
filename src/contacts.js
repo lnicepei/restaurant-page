@@ -1,6 +1,7 @@
 function createContactsPage() {
     const main = document.querySelector('.main');
     main.innerHTML = "";
+    main.style.display = 'flex';
 
     const info = document.createElement('div');
     document.querySelector('.main').appendChild(info);

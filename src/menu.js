@@ -2,6 +2,9 @@ function createMenu() {
     const main = document.querySelector('.main');
     // main.style.cssText += "margin-left:50%"
     main.innerHTML = "";
+    main.style.flexDirection = 'column';
+    main.style.display = 'grid';
+    main.style.gridTemplateColumns="1fr 1fr";
 
     const image1 = document.createElement('img');
     image1.src = "images/butternut-squash-chipotle-chili-recipe-0-1-550x822.jpg";
@@ -35,7 +38,7 @@ function createMenu() {
     main.appendChild(image3);
     
     const description3 = document.createElement('div');
-    description3.textContent = "Vegetable Paella";
+    description3.textContent = "Vegetable Paella With Garlic Sauce";
     main.appendChild(description3);
 
     const container3 = document.createElement('div');
@@ -65,7 +68,7 @@ function createMenu() {
     main.appendChild(image5);
     
     const description5 = document.createElement('div');
-    description5.textContent = "Spaghetti Squash Burrito Bowls";
+    description5.textContent = "Spaghetti Squashed Burrito Bowls";
     main.appendChild(description5);
 
     const container5 = document.createElement('div');
@@ -80,7 +83,7 @@ function createMenu() {
     main.appendChild(image6);
     
     const description6 = document.createElement('div');
-    description6.textContent = "West African Peanut Soup";
+    description6.textContent = "West African Peanut Cream Soup";
     main.appendChild(description6);
     
     const container6 = document.createElement('div');
@@ -89,11 +92,11 @@ function createMenu() {
     container6.appendChild(description6);
     main.appendChild(container6);    
 
-    const scrollContainer = document.querySelector(".main");
-    scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-});
+//     const scrollContainer = document.querySelector(".main");
+//     scrollContainer.addEventListener("wheel", (evt) => {
+//     evt.preventDefault();
+//     scrollContainer.scrollLeft += evt.deltaY;
+// });
 }
 
 export{

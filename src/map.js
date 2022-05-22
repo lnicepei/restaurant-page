@@ -1,6 +1,7 @@
 function createMap() {
     const main = document.querySelector('.main');
     main.innerHTML = "";
+    main.style.display = 'flex';
 
     const mapHolder = document.createElement('div');
     document.querySelector('.main').appendChild(mapHolder);
